@@ -1,0 +1,7 @@
+# Introducción
+
+Lo primero que haremos es que tenemos un icono de un carrito en el menú de navegación de la aplicación cuando pasamos el mouse sobre ese icono se nos despliega una modal o un submenú que al principio estará vació y por lo tanto solo tendrá el color de fondo. Abajo del menú de navegación tendremos el cuerpo de la página en este habrá diferentes tarjetas con la información acerca de un curso en dentro de esa tarjeta habrá un botón que activa un evento para poder pasar la información de ese tarjeta al carrito de comprar de está forma estaríamos agregando ese elemento que es la tarjeta al carrito.
+
+Estamos agregando elementos del cuerpo de la página al carrito que está en el menú entonces también debe de ser capaz de eliminar dicho elemento del carrito para eliminar esos elementos del DOM. Eso lo haces cuando presionamos en el boton con forma de "x" que cada agregado elemento tiene a la par cuando se hace clic en ese boton va a disparar un evento que lo hace es eliminar de ese arreglo de elementos el elemento seleccionado y después actualizar la interfaz de usuario para que automaticamente ya no siga el elemento agregado de forma visible.
+
+Otra función es que si queremos eliminar todos los elementos agrega al carrito abajo de todo hay un botón que dice vaciar carrito este boton cuando se hace clic en él lo que hará es eliminar todos los elementos agregados como su nombre lo dice selecciona todos los elementos y los elimina del arreglo después actualiza la interfaz de usuario para que no haya ninguna información en el carrito de compras.
