@@ -40,6 +40,8 @@ Ahora vamos crear la función para agregar o actualizar el DOM cada vez que se a
 
 Despues iteramos el arreglo como estamos trabajando con una tabla en cada iteración creamos una nueva fila es decir creamos un elemento `tr`despues insertamos código html como contenido de esa fila porque como es un contenido con código más complejo es más rápido que estar creando elemento por elemento sino que insertamos un código que el navegador interprete como estamos iterando objetos vamos a utilizar su misma información para mostrarla como contenido definimos que el valor del atributo `src` está en la propiedad imagen del objeto iterado y el contenido de las columnas están en las propiedades del objeto. Ahora creamos un fragmento  fuera de la función para no estar haciendo muchas inserciones al DOM sino que una vez tenemos la fila creada la insertamos al fragmento y cuando se termine de iterar el arreglo entonces se inserta el fragmentos con todo su contenido al DOM que es el elemento contenedor carrito.
 
+![Agrega elementos al DOM](./img/carrito.png)
+
 ## Función vaciar carrito
 Está función lo que hace es recorrer cada elemento hijo del elemento padre que es contenedorCarrito y elimina uno por uno dicho elemento hijo porque así se podrá sobreescribir o volver a insertar esos mismos elementos hijos pero con información actualizada.
 
@@ -48,3 +50,17 @@ Está función lo que hace es recorrer cada elemento hijo del elemento padre que
 Primero lo que hacemos es comprobar que elemento activo este evento clic si el elemento que lo activo contiene la clase borrar-curso entonces desactiva el evento predeterminado del elemento después obtén el valor del atributo `data-id` porque este elemento que activo este evento contiene ese atributo. 
 
 Ahora actualiza el arreglo de tarjetas y busca dentro de ese arreglo los elementos que no contenga el mismo valor que está en la variable `cursoId` porque el elemento que tenga el mismo valor se queda fuera de dicho arreglo y ahora manda a llamar la función `carritoHTML()` para actualizar el DOM.
+
+# Resumen
+
+Hemos visto los siguientes temas:
+
+ - [x] Como insertar elementos al DOM
+ - [x] Como actualizar la información del DOM 
+ - [x] Como eliminar elementos del DOM
+ - [x] Como seleccionar elementos del DOM
+ - [x] El uso de la funciones para ejecutar ciertas tareas
+ - [x] Como utilizar los eventos y su método burbuja
+ - [x] Como iterar un arreglo 
+ - [x] El uso de los Fragmentos para no insertar en el DOM cada elemento iterado si no que hacer una sola inserción 
+ - [x] Como pasar contenido en este caso la tarjeta de un elemento a otro elemento.
