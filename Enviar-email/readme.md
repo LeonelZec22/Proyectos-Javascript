@@ -12,3 +12,10 @@ Por ultimo tenemos el botón de resetear formulario lo que hace es eliminar el c
 # Iniciando el proyecto
 Lo primero que hacemos es seleccionar los elementos del DOM que conforman el formulario en este caso seleccionamos el formulario como elemento padre y después seleccionamos cada uno de sus elementos hijos mediante su id ya que necesitamos capturar o obtener la información ingresada en ese formulario. 
 
+## Creando función para agregar el evento
+La función `eventListeners` es la primera que se ejecuta una vez se carga la aplicación está función lo que hace es que agrega eventos a los diferentes elementos del DOM por ejemplo cada vez que se recargue el documento se activa el evento `DOMContentLoaded` y lo que hara es que ejecutara la función `inicioApp`. 
+
+Ahora a cada input del formulario le vamos a añadir el evento `blur` que se activa cuando un elemento pierde el foco, es decir, cuando el usuario deja de interactuar con ese elemento. Se utiliza para detectar cuando un usuario ha terminado de interactuar con un campo de entrada, como un campo de texto o un campo de formulario, y ha pasado a otro elemento en la página cuando eso sucede se ejecuta la función `validarFormulario` que va a validar el formato de los caracteres ingresados.
+
+Al botón enviar del formulario se le agrega el evento `submit` se activa cuando se envía un formulario, ya sea haciendo clic en un botón de envío o presionando la tecla "Enter" dentro de un campo de formulario. Se utiliza para capturar y manejar la acción de enviar un formulario a través de JavaScript. Este ejecutara la función `enviarEmail` y por último el boton de resetear formulario se le agrega el evento `click` que ejecutara la función `resetFormulario`.
+
