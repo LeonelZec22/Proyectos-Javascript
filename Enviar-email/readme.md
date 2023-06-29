@@ -8,3 +8,7 @@ La segunda validación es validar que ingresemos un dato con formato de email aq
 Cuando damos clic en el boton enviar se nos abrirá en una pestaña el gmail pero lo interesante aquí es que la información ingresada se insertara en ese correo nuevo de gmail lo cuál es genial para ser un simulador de email. Además en el simulador de correo aparece un spinner después de unos segundos se ocultara para mostrar un un mensaje en el DOM este proyecto simula la asíncronía en Javascript.
 
 Por ultimo tenemos el botón de resetear formulario lo que hace es eliminar el contenido ingresado en los inputs para que una vez enviado el formulario es que vuelva a estar vacio listo para enviar otro correo falso o por medio de gmail.
+
+# Iniciando el proyecto
+Lo primero que hacemos es seleccionar los elementos del DOM que conforman el formulario en este caso seleccionamos el formulario como elemento padre y después seleccionamos cada uno de sus elementos hijos mediante su id ya que necesitamos capturar o obtener la información ingresada en ese formulario. 
+
