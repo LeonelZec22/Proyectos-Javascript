@@ -40,6 +40,8 @@ Creamos la función `validarEmail` que recibe como parámetro un input porque es
 
 Convertimos la información ingresada en el input a minusculas y si la expresión logra validar que esa información ingresada está en el formato correcto entonces cambia la propiedad `borderBottomColor` a verde está propiedad existe porque utilizamos Tailwind y despúes elimina la clase error del elemento. En caso contrario y la información ingresada está en el formato incorrecto entonces cambia la propiedad `borderBottomColor` a color rojo y agrega la clase error al elemento.
 
+# Enviar Formulario
+
 
 
 
